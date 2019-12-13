@@ -177,6 +177,7 @@ ALTER TABLE company.EMPLOYEE ADD CONSTRAINT FOREIGN KEY (DNO) REFERENCES company
 select salary from employee;
 ```
 </details>
+
 ---
 
 <details>
@@ -186,6 +187,7 @@ select salary from employee;
 select distinct salary from employee;
 ```
 </details>
+
 ---
 
 <details>
@@ -195,6 +197,7 @@ select distinct salary from employee;
 select Bdate , address from employee where Fname = "john";
 ```
 </details>
+
 ---
 
 <details>
@@ -206,6 +209,7 @@ from employee as E , employee as S
 where E.Super_ssn = S.ssn;
 ```
 </details>
+
  ---
 
 <details>
@@ -215,6 +219,7 @@ where E.Super_ssn = S.ssn;
 select * from employee where Dno = 5;
 ```
 </details>
+
 ---
 
 <details>
@@ -224,6 +229,7 @@ select * from employee where Dno = 5;
 select * from employee where address like '%Houston%';
 ```
 </details>
+
 ---
 
 <details>
@@ -233,6 +239,7 @@ select * from employee where address like '%Houston%';
 select * from employee where Salary between 30000 and 40000;
 ```
 </details>
+
 ---
 
 <details>
@@ -242,6 +249,7 @@ select * from employee where Salary between 30000 and 40000;
 select fname from employee order by Fname asc;
 ```
 </details>
+
 ---
 
 <details>
@@ -252,6 +260,7 @@ select fname from employee where Super_ssn is null;
 
 ```
 </details>
+
 ---
 
 <details>
@@ -266,6 +275,7 @@ where salary > All ( select salary
                           ) ;
 ```
 </details>
+
 ---
 
 <details>
@@ -276,6 +286,7 @@ SELECT    SUM(Salary), MAX(Salary), MIN(Salary), AVG(Salary) , count(salary)
 FROM	EMPLOYEE;
 ```
 </details>
+
 ---
 
 <details>
@@ -291,6 +302,7 @@ where (pno , hours) in ( select pno , hours
                          );
 ```
 </details>
+
 ---
 
 
