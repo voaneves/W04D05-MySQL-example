@@ -282,7 +282,7 @@ where salary > All ( select salary
 <summary> Q11.max , min , avg , sum ,count </summary>
   
 ```SQL
-SELECT    SUM(Salary), MAX(Salary), MIN(Salary), AVG(Salary) , count(salary)
+SELECT SUM(Salary), MAX(Salary), MIN(Salary), AVG(Salary) , count(salary)
 FROM	EMPLOYEE;
 ```
 </details>
@@ -295,8 +295,7 @@ that employee ‘John Smith’ (whose Ssn = ‘123456789’) works on  </summary
   
 ```SQL
 select distinct Essn 
-from works_on
-where (pno , hours) in ( select pno , hours
+from works_on where (pno , hours) in ( select pno , hours
                          from works_on
                          where Essn = "123456789"
                          );
